@@ -69,7 +69,7 @@ function BarLoop()
         Skillbar.Data.Active = true
         CreateThread(function()
             while Skillbar.Data.Active do
-                if IsControlJustPressed(0, 38) then
+                if IsControlJustPressed(0, 38) or IsControlJustPressed(0, 24) then
                     SendNUIMessage({
                         action = "check",
                         data = Skillbar.Data.Data,
